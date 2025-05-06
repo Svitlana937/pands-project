@@ -37,4 +37,14 @@ for line in lines:
     if line.strip():  # Skip empty lines
         fourth_column.append(line.split(',')[3])
 
+# Summary of the first column
+# Converting the first column from string to numeric values
+first_column_numeric = []
+for value in first_column:
+    # Insert a float conversion here
+    first_column_numeric.append(float(value))
 
+first_column_sum = sum(first_column_numeric)
+print("Sum of the first column:", first_column_sum)
+
+second_column_numeric = []
