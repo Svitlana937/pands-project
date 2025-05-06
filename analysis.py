@@ -4,4 +4,5 @@ with open("iris/iris.data", 'r') as f:
 
 # Checking if we get the data correctly  
 # print(data)
+# new  line
 
