@@ -13,6 +13,7 @@ lines = read_data.strip().split('\n')
 # Extracting the first column 
 first_column = []
 for line in lines:
+    # https://www.w3schools.com/python/ref_string_strip.asp
     if line.strip():  # Skip empty lines
         first_column.append(line.split(',')[0])
 
@@ -61,3 +62,9 @@ fourth_column_numeric = []
 for value in fourth_column:
     # Insert a float conversion here
     fourth_column_numeric.append(float(value))
+
+with open("summary.txt", "a") as f:
+  f.write(f"Summary of the first column: {first_column_sum}\n") 
+  f.write(f"Summary of the second column: {sum(second_column_numeric)}\n")
+  f.write(f"Summary of the third column: {sum(third_column_numeric)}\n")
+  f.write(f"Summary of the fourth column: {sum(fourth_column_numeric)}\n")
