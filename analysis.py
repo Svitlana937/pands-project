@@ -7,6 +7,8 @@ with open('iris/iris.data', 'r') as f:
 # print(read_data)    
 
 # Splitting the data into lines
+# https://www.w3schools.com/python/ref_string_strip.asp
+# https://www.w3schools.com/python/ref_string_rsplit.asp
 lines = read_data.strip().split('\n')
 
 
