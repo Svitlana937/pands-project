@@ -1,3 +1,6 @@
+from iris_data_load import *
+
+
 # Extracting the first column 
 first_column = []
 for line in lines:

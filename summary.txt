@@ -1,5 +1,4 @@
-Summary of the first column: 876.5
-Summary of the first column: 876.5
-Summary of the second column: 458.1
-Summary of the third column: 563.8
-Summary of the fourth column: 179.8
+SepalLengthCm: 876.5
+SepalWidthCm: 458.1
+PetalLengthCm: 563.8
+PetalWidthCm: 179.8
