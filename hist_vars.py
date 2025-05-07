@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 # https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.hist.html
 # As we need to plot four histograms, it is better to create a function that will plot the histograms for us
-def hist_plotting(variable):
+def hist_plotting(variable, title="Histogram", xlabel="Value", ylabel="Frequency"):
     plt.hist(variable)
 
     # https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.savefig.html

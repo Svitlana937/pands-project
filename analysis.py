@@ -7,6 +7,9 @@ import column_creates as col_crea
 # importing package with the function which draw a plot
 from hist_vars import hist_plotting as hist_plotting
 
+# importing package with the function which draw a scatter plot
+from scatter_plotting import scatter_plotting as scatter_plotting
+
 # creating variables for the column names
 SepalLengthCm = "SepalLengthCm: "
 SepalWidthCm = "SepalWidthCm: "
@@ -22,4 +25,10 @@ with open("summary.txt", "w") as f:
 
 # Plotting the histograms for the four columns
 hist_plotting(converter.first_column_numeric)
+hist_plotting(converter.second_column_numeric)
+hist_plotting(converter.third_column_numeric)
+hist_plotting(converter.fourth_column_numeric)
 
+# Plotting the scatter plot for the first two columns
+scatter_plotting(converter.first_column_numeric, converter.second_column_numeric,
+                title="Sepal Length vs Sepal Width", xlabel="Sepal Length (cm)", ylabel="Sepal Width (cm)")
