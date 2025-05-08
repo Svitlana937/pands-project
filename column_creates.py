@@ -1,7 +1,13 @@
+# Importing the iris_data_load package, with lines variable where we stored the data from the iris dataset
+# https://docs.python.org/3/tutorial/modules.html#packages
+# https://www.geeksforgeeks.org/how-to-import-other-python-files/
 from iris_data_load import *
 
 
-# Extracting the first column 
+# Each iteration for loop takes a line from the lines variable and splits it by comma
+# and appends the first item to the first_column list
+# this way we are creating a list of the first column values
+# https://www.w3schools.com/python/ref_list_append.asp
 first_column = []
 for line in lines:
     # https://www.w3schools.com/python/ref_string_strip.asp
