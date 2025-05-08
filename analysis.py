@@ -24,10 +24,10 @@ with open("summary.txt", "w") as f:
   f.write(str(f'{PetalWidthCm}{converter.fourth_column_sum}') + "\n")
 
 # Plotting the histograms for the four columns
-hist_plotting(converter.first_column_numeric)
-hist_plotting(converter.second_column_numeric)
-hist_plotting(converter.third_column_numeric)
-hist_plotting(converter.fourth_column_numeric)
+hist_plotting(converter.first_column_numeric, "Sepal Length Histogram")
+hist_plotting(converter.second_column_numeric, "Sepal Width Histogram")
+hist_plotting(converter.third_column_numeric, "Petal Length Histogram")
+hist_plotting(converter.fourth_column_numeric, "Petal Width Histogram")
 
 # Plotting the scatter plot for the first two columns
 scatter_plotting(converter.first_column_numeric, converter.second_column_numeric,
