@@ -32,3 +32,5 @@ hist_plotting(converter.fourth_column_numeric, "Petal Width Histogram")
 # Plotting the scatter plot for the first two columns
 scatter_plotting(converter.first_column_numeric, converter.second_column_numeric,
                 title="Sepal Length vs Sepal Width", xlabel="Sepal Length (cm)", ylabel="Sepal Width (cm)")
+scatter_plotting(converter.third_column_numeric, converter.fourth_column_numeric,
+                title="Petal Length vs Petal Width", xlabel="Petal Length (cm)", ylabel="Petal Width (cm)")
