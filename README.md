@@ -32,11 +32,11 @@ This project analyzes the Iris dataset by performing various data analysis and v
 2. Install the required libraries:
    ```bash
    pip install matplotlib seaborn pandas
-   ```
+   
 3. Run the main script:
    ```bash
    python analysis.py
-   ```
+   
 4. Check the output:
    - `summary.txt` for column sums.
    - `.png` files for histograms, scatter plots, and pair plots.
