@@ -10,6 +10,9 @@ from hist_vars import hist_plotting as hist_plotting
 # importing package with the function which draw a scatter plot
 from scatter_plotting import scatter_plotting as scatter_plotting
 
+# Importing the pair_plotting package
+from pair_plotting_extra import pair_plotting as pair_plotting
+
 # creating variables for the column names
 SepalLengthCm = "SepalLengthCm: "
 SepalWidthCm = "SepalWidthCm: "
@@ -34,3 +37,17 @@ scatter_plotting(converter.first_column_numeric, converter.second_column_numeric
                 title="Sepal Length vs Sepal Width", xlabel="Sepal Length (cm)", ylabel="Sepal Width (cm)")
 scatter_plotting(converter.third_column_numeric, converter.fourth_column_numeric,
                 title="Petal Length vs Petal Width", xlabel="Petal Length (cm)", ylabel="Petal Width (cm)")
+
+
+# Creating a dictionary with the four columns
+# This dictionary will be used to create a DataFrame for the pair plot
+# It will be a first argument of the pair_plotting function
+data = {
+    "Sepal Length": converter.first_column_numeric,
+    "Sepal Width": converter.second_column_numeric,
+    "Petal Length": converter.third_column_numeric,
+    "Petal Width": converter.fourth_column_numeric
+}
+
+# Plotting the pair plot for the four columns
+pair_plotting(data)
